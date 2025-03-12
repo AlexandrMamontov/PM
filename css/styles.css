@@ -1,0 +1,422 @@
+@font-face {
+    font-family: 'Inter-Regular';
+    font-display: swap;
+    src: local('Inter-Regular'),
+        url('../fonts/Inter-Regular.woff') format('woff');
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Inter-Regular', sans-serif;
+    line-height: normal;
+    color: #333;
+}
+
+.tasks-pm__wrapper {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.tasks-pm__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: normal;
+    color: #333;
+}
+
+.tasks-pm__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #333;
+}
+
+.tasks-pm__item {
+    display: flex;
+}
+
+.tasks-pm__item:not(:last-child) {
+    border-bottom: 1px solid #333;
+}
+
+.tasks-pm__color {
+    min-width: 200px;
+    border-right: 1px solid #333;
+}
+
+.tasks-pm__color.green {
+    background-color: #2dff68;
+}
+
+.tasks-pm__color.blue {
+    background-color: #74fefe;
+}
+
+.tasks-pm__color.red {
+    background-color: #fe4a49;
+}
+
+.tasks-pm__value {
+    padding: 10px;
+    font-size: 18px;
+    line-height: normal;
+    color: #333;
+}
+
+.tasks-pm__actions {
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tasks-pm__box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tasks-pm__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tasks-pm__block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.tasks-pm__btn {
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #ebedec;
+    font-size: 18px;
+    line-height: normal;
+    color: #333;
+    white-space: nowrap;
+}
+
+#submit-sms-btn {
+    padding-left: 40px;
+}
+
+#submit-sms-btn::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/1.sms.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tasks-pm__btn.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.tasks-pm__label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    line-height: normal;
+    color: #333;
+}
+
+.tasks-pm__checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.tasks-pm__information {
+    overflow: hidden;
+    overflow-x: scroll;
+    /* scrollbar-width: none; */
+}
+
+.tasks-pm__form {
+    display: flex;
+}
+
+.tasks-pm__input {
+    padding: 10px 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    outline: none;
+}
+
+#input-number {
+    min-width: 120px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(1) {
+    min-width: 120px;
+    width: 100%;
+}
+
+#input-date {
+    min-width: 140px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(2) {
+    min-width: 140px;
+    width: 100%;
+}
+
+#input-city {
+    min-width: 155px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(3) {
+    min-width: 155px;
+    width: 100%;
+}
+
+#input-manager {
+    min-width: 210px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(4) {
+    min-width: 210px;
+    width: 100%;
+}
+
+#input-fio {
+    min-width: 220px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(5) {
+    min-width: 220px;
+    width: 100%;
+}
+
+#input-phone {
+    min-width: 240px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(6) {
+    min-width: 240px;
+    width: 100%;
+}
+
+#input-important {
+    min-width: 225px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(7) {
+    min-width: 225px;
+    width: 100%;
+}
+
+#input-status-task {
+    min-width: 205px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(8) {
+    min-width: 205px;
+    width: 100%;
+    text-align: center;
+}
+
+#input-status-order {
+    min-width: 210px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(9) {
+    min-width: 210px;
+    width: 100%;
+}
+
+#input-result {
+    min-width: 200px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(10) {
+    min-width: 200px;
+    width: 100%;
+}
+
+.tasks-pm__input::placeholder {
+    color: #fff;
+}
+
+.tasks-pm__input:hover {
+    border-color: #000;
+}
+
+.tasks-pm__row {
+    display: flex;
+}
+
+.tasks-pm__row .tasks-pm__cell {
+    background-color: #fff;
+}
+
+.tasks-pm__row.green .tasks-pm__cell {
+    background-color: #2dff68;
+}
+
+.tasks-pm__row.blue .tasks-pm__cell {
+    background-color: #74fefe;
+}
+
+.tasks-pm__row.red .tasks-pm__cell {
+    background-color: #fe4a49;
+    color: #fff;
+}
+
+.tasks-pm__cell {
+    padding: 8px;
+    border: 1px solid #333;
+    font-size: 16px;
+    color: #333;
+}
+
+.tasks-pm__phone,
+.tasks-pm__important,
+.tasks-pm__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tasks-pm__icon {
+    min-width: 15px;
+    height: 15px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-phone {
+    background-image: url('../img/2.telephone.svg');
+}
+
+.icon-whatsapp {
+    background-image: url('../img/2.whatsapp.svg');
+}
+
+.icon-copy {
+    background-image: url('../img/2.copi.svg');
+}
+
+.icon-status {
+    border-radius: 50%;
+}
+
+.icon-status.gray {
+    background-color: #333;
+}
+
+.icon-status.green {
+    background-color: #4ea124;
+}
+
+.icon-status.danger {
+    border-radius: 0;
+    background-image: url('../img/4.vagno.svg');
+}
+
+.icon-important {
+    background-image: url('../img/3.vagno.svg');
+}
+
+.icon-dolg {
+    background-image: url('../img/5.dolg.svg');
+}
+
+.icon-dostavka {
+    background-image: url('../img/5.dostavka.svg');
+}
+
+.icon-otziv {
+    background-image: url('../img/5.otziv.svg');
+}
+
+.icon-ustanovka {
+    background-image: url('../img/5.ustanovka.svg');
+}
+
+.tasks-pm__status span {
+    width: min-content;
+}
+
+@media screen and (max-width: 768px) {
+    .tasks-pm__color {
+        min-width: 50px;
+    }
+
+    .tasks-pm__actions {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .tasks-pm__block {
+        justify-content: center;
+    }
+
+    .tasks-pm__box {
+        flex-direction: column;
+    }
+
+    .tasks-pm__buttons {
+        align-items: center;
+    }
+
+    .tasks-pm__btn {
+        width: fit-content;
+    }
+}

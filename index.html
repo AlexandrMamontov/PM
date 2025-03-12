@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПМ</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="tasks-pm">
+        <div class="tasks-pm__container">
+            <h2 class="tasks-pm__title">Задачи</h2>
+            <div class="tasks-pm__wrapper">
+                <div class="tasks-pm__info">
+                    <ul class="tasks-pm__list">
+                        <li class="tasks-pm__item">
+                            <div class="tasks-pm__color green"></div>
+                            <div class="tasks-pm__value">
+                                Задача открыта / я - ответственный / задача ожидает подтверждения
+                            </div>
+                        </li>
+                        <li class="tasks-pm__item">
+                            <div class="tasks-pm__color blue"></div>
+                            <div class="tasks-pm__value">
+                                Задача открыта / до просрочки осталось менее 30 минут
+                            </div>
+                        </li>
+                        <li class="tasks-pm__item">
+                            <div class="tasks-pm__color red"></div>
+                            <div class="tasks-pm__value">
+                                Задача открыта / до просрочки осталось менее 15 минут / задача просрочена
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tasks-pm__actions">
+                    <div class="tasks-pm__box">
+                        <div class="tasks-pm__buttons">
+                            <button id="fix-event-btn" class="tasks-pm__btn dark">+ Зафиксировать событие</button>
+                            <button id="set-reminder-btn" class="tasks-pm__btn">+ Поставить напоминание</button>
+                        </div>
+                        <div class="tasks-pm__buttons">
+                            <button id="save-filter-btn" class="tasks-pm__btn dark">Сохранить фильтр</button>
+                            <button id="create-task-btn" class="tasks-pm__btn dark">+ Создать задачу</button>
+                        </div>
+                        <div class="tasks-pm__buttons">
+                            <button id="clear-filter-btn" class="tasks-pm__btn">Очистить фильтр</button>
+                            <button id="submit-sms-btn" class="tasks-pm__btn">Отправить смс</button>
+                        </div>
+                    </div>
+                    <div class="tasks-pm__block">
+                        <label for="hide-deferred-tasks" class="tasks-pm__label">
+                            Скрыть отложенные
+                            <input type="checkbox" id="hide-deferred-tasks" name="hide-deferred-tasks"
+                                class="tasks-pm__checkbox">
+                        </label>
+                        <label for="hide-tech-tasks" class="tasks-pm__label">
+                            Скрыть технические задачи
+                            <input type="checkbox" id="hide-tech-tasks" name="hide-tech-tasks"
+                                class="tasks-pm__checkbox">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks-pm__information">
+                <form action="#" class="tasks-pm__form">
+                    <input id="input-number" type="text" name="number" placeholder="№ задачи" class="tasks-pm__input">
+                    <input id="input-date" type="text" name="date" placeholder="Дата создания" class="tasks-pm__input">
+                    <input id="input-city" type="text" name="city" placeholder="Город" class="tasks-pm__input">
+                    <input id="input-manager" type="text" name="manager" placeholder="Менеджер" class="tasks-pm__input">
+                    <input id="input-fio" type="text" name="fio" placeholder="ФИО клиента" class="tasks-pm__input">
+                    <input id="input-phone" type="text" name="phone" placeholder="Номер клиента" class="tasks-pm__input">
+                    <input id="input-important" type="text" name="important" placeholder="Важность" class="tasks-pm__input">
+                    <input id="input-status-task" type="text" name="status-task" placeholder="Статус задачи" class="tasks-pm__input">
+                    <input id="input-status-order" type="text" name="status-order" placeholder="Статус заказа" class="tasks-pm__input">
+                    <input id="input-result" type="text" name="result" placeholder="Итог разговора" class="tasks-pm__input">
+                </form>
+                <div class="tasks-pm__table">
+                    <div class="tasks-pm__row green">
+                        <div class="tasks-pm__cell">10275612</div>
+                        <div class="tasks-pm__cell">07.03.2025</div>
+                        <div class="tasks-pm__cell">Москва</div>
+                        <div class="tasks-pm__cell">Гожа Ольга Николаевна</div>
+                        <div class="tasks-pm__cell">Иванов Иван Иванович</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__phone">
+                                <div class="tasks-pm__icon icon-phone"></div>
+                                <div class="tasks-pm__icon icon-whatsapp"></div>
+                                <span>+7 (999) 999-99-99</span>
+                                <div class="tasks-pm__icon icon-copy"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__important">
+                                <div class="tasks-pm__icon icon-status gray"></div>
+                                <span>2880 мин.</span>
+                                <div class="tasks-pm__icon icon-important"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">Задача открыта</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__status">
+                                <div class="tasks-pm__icon icon-dolg"></div>
+                                <span>Дебиторская задолженность</span>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell"></div>
+                    </div>
+                    <div class="tasks-pm__row blue">
+                        <div class="tasks-pm__cell">10275612</div>
+                        <div class="tasks-pm__cell">07.03.2025</div>
+                        <div class="tasks-pm__cell">Ярославль</div>
+                        <div class="tasks-pm__cell">Гожа Ольга Николаевна</div>
+                        <div class="tasks-pm__cell">Иванов Иван Иванович</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__phone">
+                                <div class="tasks-pm__icon icon-phone"></div>
+                                <div class="tasks-pm__icon icon-whatsapp"></div>
+                                <span>+7 (999) 999-99-99</span>
+                                <div class="tasks-pm__icon icon-copy"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__important">
+                                <div class="tasks-pm__icon icon-status green"></div>
+                                <span>4320 мин.</span>
+                                <div class="tasks-pm__icon icon-important"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">Задача открыта</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__status">
+                                <div class="tasks-pm__icon icon-dostavka"></div>
+                                <span>Доставка</span>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell"></div>
+                    </div>
+                    <div class="tasks-pm__row red">
+                        <div class="tasks-pm__cell">10275612</div>
+                        <div class="tasks-pm__cell">07.03.2025</div>
+                        <div class="tasks-pm__cell">Владимир</div>
+                        <div class="tasks-pm__cell">Гожа Ольга Николаевна</div>
+                        <div class="tasks-pm__cell">Иванов Иван Иванович</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__phone">
+                                <div class="tasks-pm__icon icon-phone"></div>
+                                <div class="tasks-pm__icon icon-whatsapp"></div>
+                                <span>+7 (999) 999-99-99</span>
+                                <div class="tasks-pm__icon icon-copy"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__important">
+                                <div class="tasks-pm__icon icon-status danger"></div>
+                                <span>Задача просрочена</span>
+                                <div class="tasks-pm__icon icon-important"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">Задача открыта</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__status">
+                                <div class="tasks-pm__icon icon-ustanovka"></div>
+                                <span>Установка</span>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell"></div>
+                    </div>
+                    <div class="tasks-pm__row">
+                        <div class="tasks-pm__cell">10275612</div>
+                        <div class="tasks-pm__cell">07.03.2025</div>
+                        <div class="tasks-pm__cell">Нижний Новгород</div>
+                        <div class="tasks-pm__cell">Гожа Ольга Николаевна</div>
+                        <div class="tasks-pm__cell">Иванов Иван Иванович</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__phone">
+                                <div class="tasks-pm__icon icon-phone"></div>
+                                <div class="tasks-pm__icon icon-whatsapp"></div>
+                                <span>+7 (999) 999-99-99</span>
+                                <div class="tasks-pm__icon icon-copy"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__important">
+                                <div class="tasks-pm__icon icon-status gray"></div>
+                                <span>2880 мин.</span>
+                                <div class="tasks-pm__icon icon-important"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">Задача открыта</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__status">
+                                <div class="tasks-pm__icon icon-otziv"></div>
+                                <span>Отзыв</span>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell"></div>
+                    </div>
+                    <div class="tasks-pm__row">
+                        <div class="tasks-pm__cell">10275612</div>
+                        <div class="tasks-pm__cell">07.03.2025</div>
+                        <div class="tasks-pm__cell">Москва</div>
+                        <div class="tasks-pm__cell">Гожа Ольга Николаевна</div>
+                        <div class="tasks-pm__cell">Иванов Иван Иванович</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__phone">
+                                <div class="tasks-pm__icon icon-phone"></div>
+                                <div class="tasks-pm__icon icon-whatsapp"></div>
+                                <span>+7 (999) 999-99-99</span>
+                                <div class="tasks-pm__icon icon-copy"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__important">
+                                <div class="tasks-pm__icon icon-status green"></div>
+                                <span>2880 мин.</span>
+                                <div class="tasks-pm__icon icon-important"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">Задача открыта</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__status">
+                                <div class="tasks-pm__icon icon-dolg"></div>
+                                <span>Дебиторская задолженность</span>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell"></div>
+                    </div>
+                    <div class="tasks-pm__row red">
+                        <div class="tasks-pm__cell">10275612</div>
+                        <div class="tasks-pm__cell">07.03.2025</div>
+                        <div class="tasks-pm__cell">Москва</div>
+                        <div class="tasks-pm__cell">Гожа Ольга Николаевна</div>
+                        <div class="tasks-pm__cell">Иванов Иван Иванович</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__phone">
+                                <div class="tasks-pm__icon icon-phone"></div>
+                                <div class="tasks-pm__icon icon-whatsapp"></div>
+                                <span>+7 (999) 999-99-99</span>
+                                <div class="tasks-pm__icon icon-copy"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__important">
+                                <div class="tasks-pm__icon icon-status danger"></div>
+                                <span>Задача просрочена</span>
+                                <div class="tasks-pm__icon icon-important"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">Задача открыта</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__status">
+                                <div class="tasks-pm__icon icon-dostavka"></div>
+                                <span>Доставка</span>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell"></div>
+                    </div>
+                    <div class="tasks-pm__row">
+                        <div class="tasks-pm__cell">10275612</div>
+                        <div class="tasks-pm__cell">07.03.2025</div>
+                        <div class="tasks-pm__cell">Петропавловск-Камчатский</div>
+                        <div class="tasks-pm__cell">Гожа Ольга Николаевна</div>
+                        <div class="tasks-pm__cell">Иванов Иван Иванович</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__phone">
+                                <div class="tasks-pm__icon icon-phone"></div>
+                                <div class="tasks-pm__icon icon-whatsapp"></div>
+                                <span>+7 (999) 999-99-99</span>
+                                <div class="tasks-pm__icon icon-copy"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__important">
+                                <div class="tasks-pm__icon icon-status green"></div>
+                                <span>4320 мин.</span>
+                                <div class="tasks-pm__icon icon-important"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">Задача открыта</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__status">
+                                <div class="tasks-pm__icon icon-otziv"></div>
+                                <span>Отзыв</span>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell"></div>
+                    </div>
+                    <div class="tasks-pm__row">
+                        <div class="tasks-pm__cell">10275612</div>
+                        <div class="tasks-pm__cell">07.03.2025</div>
+                        <div class="tasks-pm__cell">Санкт-Петербург</div>
+                        <div class="tasks-pm__cell">Гожа Ольга Николаевна</div>
+                        <div class="tasks-pm__cell">Иванов Иван Иванович</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__phone">
+                                <div class="tasks-pm__icon icon-phone"></div>
+                                <div class="tasks-pm__icon icon-whatsapp"></div>
+                                <span>+7 (999) 999-99-99</span>
+                                <div class="tasks-pm__icon icon-copy"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__important">
+                                <div class="tasks-pm__icon icon-status gray"></div>
+                                <span>2880 мин.</span>
+                                <div class="tasks-pm__icon icon-important"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">Задача открыта</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__status">
+                                <div class="tasks-pm__icon icon-ustanovka"></div>
+                                <span>Установка</span>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell"></div>
+                    </div>
+                    <div class="tasks-pm__row red">
+                        <div class="tasks-pm__cell">10275612</div>
+                        <div class="tasks-pm__cell">07.03.2025</div>
+                        <div class="tasks-pm__cell">Москва</div>
+                        <div class="tasks-pm__cell">Гожа Ольга Николаевна</div>
+                        <div class="tasks-pm__cell">Иванов Иван Иванович</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__phone">
+                                <div class="tasks-pm__icon icon-phone"></div>
+                                <div class="tasks-pm__icon icon-whatsapp"></div>
+                                <span>+7 (999) 999-99-99</span>
+                                <div class="tasks-pm__icon icon-copy"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__important">
+                                <div class="tasks-pm__icon icon-status danger"></div>
+                                <span>Задача просрочена</span>
+                                <div class="tasks-pm__icon icon-important"></div>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell">Задача открыта</div>
+                        <div class="tasks-pm__cell">
+                            <div class="tasks-pm__status">
+                                <div class="tasks-pm__icon icon-dostavka"></div>
+                                <span>Доставка</span>
+                            </div>
+                        </div>
+                        <div class="tasks-pm__cell"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
