@@ -67,7 +67,7 @@ body {
 }
 
 .tasks-pm__color {
-    min-width: 200px;
+    min-width: 50px;
     border-right: 1px solid #333;
 }
 
@@ -84,8 +84,8 @@ body {
 }
 
 .tasks-pm__value {
-    padding: 10px;
-    font-size: 18px;
+    padding: 8px;
+    font-size: 16px;
     line-height: normal;
     color: #333;
 }
@@ -118,13 +118,13 @@ body {
 }
 
 .tasks-pm__btn {
-    padding: 10px 20px;
+    padding: 10px 15px;
     position: relative;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     background-color: #ebedec;
-    font-size: 18px;
+    font-size: 14px;
     line-height: normal;
     color: #333;
     white-space: nowrap;
@@ -157,24 +157,26 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: normal;
     color: #333;
 }
 
 .tasks-pm__checkbox {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 
 .tasks-pm__information {
-    overflow: hidden;
-    overflow-x: scroll;
-    /* scrollbar-width: none; */
+    height: 600px;
+    overflow: scroll;
+    scrollbar-width: thin;
 }
 
 .tasks-pm__form {
     display: flex;
+    position: sticky;
+    top: 0;
 }
 
 .tasks-pm__input {
@@ -188,12 +190,12 @@ body {
 }
 
 #input-number {
-    min-width: 120px;
+    min-width: 100px;
     width: 100%;
 }
 
 .tasks-pm__cell:nth-child(1) {
-    min-width: 120px;
+    min-width: 100px;
     width: 100%;
 }
 
@@ -238,12 +240,12 @@ body {
 }
 
 #input-phone {
-    min-width: 240px;
+    min-width: 260px;
     width: 100%;
 }
 
 .tasks-pm__cell:nth-child(6) {
-    min-width: 240px;
+    min-width: 260px;
     width: 100%;
 }
 
@@ -258,23 +260,23 @@ body {
 }
 
 #input-status-task {
-    min-width: 205px;
+    min-width: 190px;
     width: 100%;
 }
 
 .tasks-pm__cell:nth-child(8) {
-    min-width: 205px;
+    min-width: 190px;
     width: 100%;
     text-align: center;
 }
 
 #input-status-order {
-    min-width: 210px;
+    min-width: 200px;
     width: 100%;
 }
 
 .tasks-pm__cell:nth-child(9) {
-    min-width: 210px;
+    min-width: 200px;
     width: 100%;
 }
 
@@ -320,7 +322,7 @@ body {
 .tasks-pm__cell {
     padding: 8px;
     border: 1px solid #333;
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
 }
 
@@ -331,6 +333,10 @@ body {
     align-items: center;
     justify-content: center;
     gap: 5px;
+}
+
+.tasks-pm__status {
+    justify-content: flex-start;
 }
 
 .tasks-pm__icon {
@@ -350,6 +356,9 @@ body {
 }
 
 .icon-copy {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
     background-image: url('../img/2.copi.svg');
 }
 
@@ -372,6 +381,11 @@ body {
 
 .icon-important {
     background-image: url('../img/3.vagno.svg');
+    text-decoration: none;
+}
+
+.icon-important:hover {
+    text-decoration: none;
 }
 
 .icon-dolg {
@@ -394,29 +408,37 @@ body {
     width: min-content;
 }
 
-@media screen and (max-width: 768px) {
-    .tasks-pm__color {
-        min-width: 50px;
+@media screen and (max-width: 1024px) {
+    .tasks-pm__title {
+        text-align: center;
     }
 
-    .tasks-pm__actions {
-        width: 100%;
-        padding: 0 10px;
+    .tasks-pm__wrapper {
+        justify-content: center;
     }
 
     .tasks-pm__block {
         justify-content: center;
     }
+}
 
+@media screen and (max-width: 768px) {
+    .tasks-pm__actions {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .tasks-pm__box {
         flex-direction: column;
     }
 
     .tasks-pm__buttons {
-        align-items: center;
+        width: auto;
     }
 
-    .tasks-pm__btn {
-        width: fit-content;
+    .tasks-pm__block {
+        flex-direction: column;
+        gap: 15px;
     }
 }

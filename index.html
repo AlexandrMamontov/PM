@@ -66,6 +66,7 @@
                 </div>
             </div>
             <div class="tasks-pm__information">
+                <!-- Alex фильтр как в тлф справочнике -->
                 <form action="#" class="tasks-pm__form">
                     <input id="input-number" type="text" name="number" placeholder="№ задачи" class="tasks-pm__input">
                     <input id="input-date" type="text" name="date" placeholder="Дата создания" class="tasks-pm__input">
@@ -79,6 +80,7 @@
                     <input id="input-result" type="text" name="result" placeholder="Итог разговора" class="tasks-pm__input">
                 </form>
                 <div class="tasks-pm__table">
+                    <!-- Alex класс 'green' окрашивает всю строку в зелёный цвет -->
                     <div class="tasks-pm__row green">
                         <div class="tasks-pm__cell">10275612</div>
                         <div class="tasks-pm__cell">07.03.2025</div>
@@ -90,25 +92,32 @@
                                 <div class="tasks-pm__icon icon-phone"></div>
                                 <div class="tasks-pm__icon icon-whatsapp"></div>
                                 <span>+7 (999) 999-99-99</span>
-                                <div class="tasks-pm__icon icon-copy"></div>
+                                <!-- Alex кнопка, которая копирует номер тлф -->
+                                <button class="tasks-pm__icon icon-copy"></button>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__important">
+                                <!-- Alex класс 'gray' окрашивает кружок в серый цвет -->
                                 <div class="tasks-pm__icon icon-status gray"></div>
                                 <span>2880 мин.</span>
-                                <div class="tasks-pm__icon icon-important"></div>
+                                <!-- Alex ссылка, отображающая в title текст, обозначающий статус -->
+                                <a href="#" title="Задача просрочена lorem ipsum" class="tasks-pm__icon icon-important"></a>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">Задача открыта</div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__status">
+                                <!-- Alex класс 'icon-dolg' отображает иконку долга -->
                                 <div class="tasks-pm__icon icon-dolg"></div>
                                 <span>Дебиторская задолженность</span>
                             </div>
                         </div>
-                        <div class="tasks-pm__cell"></div>
+                        <div class="tasks-pm__cell">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, cum optio suscipit obcaecati expedita, harum, quibusdam eum laborum exercitationem commodi molestias? Eius explicabo doloribus ipsam, perspiciatis neque ad sapiente ullam?
+                        </div>
                     </div>
+                    <!-- Alex класс 'blue' окрашивает всю строку в голубой цвет -->
                     <div class="tasks-pm__row blue">
                         <div class="tasks-pm__cell">10275612</div>
                         <div class="tasks-pm__cell">07.03.2025</div>
@@ -120,25 +129,28 @@
                                 <div class="tasks-pm__icon icon-phone"></div>
                                 <div class="tasks-pm__icon icon-whatsapp"></div>
                                 <span>+7 (999) 999-99-99</span>
-                                <div class="tasks-pm__icon icon-copy"></div>
+                                <button class="tasks-pm__icon icon-copy"></button>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__important">
+                                <!-- Alex класс 'green' окрашивает кружок в зелёный цвет -->
                                 <div class="tasks-pm__icon icon-status green"></div>
                                 <span>4320 мин.</span>
-                                <div class="tasks-pm__icon icon-important"></div>
+                                <a href="#" title="Задача просрочена lorem ipsum" class="tasks-pm__icon icon-important"></a>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">Задача открыта</div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__status">
+                                <!-- Alex класс 'icon-dolg' отображает иконку доставки -->
                                 <div class="tasks-pm__icon icon-dostavka"></div>
                                 <span>Доставка</span>
                             </div>
                         </div>
                         <div class="tasks-pm__cell"></div>
                     </div>
+                    <!-- Alex класс 'red' окрашивает всю строку в красный цвет и меняет цвет текста в белый цвет -->
                     <div class="tasks-pm__row red">
                         <div class="tasks-pm__cell">10275612</div>
                         <div class="tasks-pm__cell">07.03.2025</div>
@@ -150,25 +162,30 @@
                                 <div class="tasks-pm__icon icon-phone"></div>
                                 <div class="tasks-pm__icon icon-whatsapp"></div>
                                 <span>+7 (999) 999-99-99</span>
-                                <div class="tasks-pm__icon icon-copy"></div>
+                                <button class="tasks-pm__icon icon-copy"></button>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__important">
+                                <!-- Alex класс 'danger' отображает иконку предупреждения -->
                                 <div class="tasks-pm__icon icon-status danger"></div>
                                 <span>Задача просрочена</span>
-                                <div class="tasks-pm__icon icon-important"></div>
+                                <a href="#" title="Задача просрочена lorem ipsum" class="tasks-pm__icon icon-important"></a>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">Задача открыта</div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__status">
+                                <!-- Alex класс 'icon-ustanovka' отображает иконку установки -->
                                 <div class="tasks-pm__icon icon-ustanovka"></div>
                                 <span>Установка</span>
                             </div>
                         </div>
-                        <div class="tasks-pm__cell"></div>
+                        <div class="tasks-pm__cell">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sint odio optio provident numquam tempora saepe, ullam qui, facere consectetur expedita.
+                        </div>
                     </div>
+                    <!-- Alex при отстутствии дополнительного класса вся строка по умолчанию белая -->
                     <div class="tasks-pm__row">
                         <div class="tasks-pm__cell">10275612</div>
                         <div class="tasks-pm__cell">07.03.2025</div>
@@ -180,24 +197,27 @@
                                 <div class="tasks-pm__icon icon-phone"></div>
                                 <div class="tasks-pm__icon icon-whatsapp"></div>
                                 <span>+7 (999) 999-99-99</span>
-                                <div class="tasks-pm__icon icon-copy"></div>
+                                <button class="tasks-pm__icon icon-copy"></button>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__important">
                                 <div class="tasks-pm__icon icon-status gray"></div>
                                 <span>2880 мин.</span>
-                                <div class="tasks-pm__icon icon-important"></div>
+                                <a href="#" title="Задача просрочена lorem ipsum" class="tasks-pm__icon icon-important"></a>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">Задача открыта</div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__status">
+                                <!-- Alex класс 'icon-otziv' отображает иконку отзыва -->
                                 <div class="tasks-pm__icon icon-otziv"></div>
                                 <span>Отзыв</span>
                             </div>
                         </div>
-                        <div class="tasks-pm__cell"></div>
+                        <div class="tasks-pm__cell">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </div>
                     </div>
                     <div class="tasks-pm__row">
                         <div class="tasks-pm__cell">10275612</div>
@@ -210,14 +230,14 @@
                                 <div class="tasks-pm__icon icon-phone"></div>
                                 <div class="tasks-pm__icon icon-whatsapp"></div>
                                 <span>+7 (999) 999-99-99</span>
-                                <div class="tasks-pm__icon icon-copy"></div>
+                                <button class="tasks-pm__icon icon-copy"></button>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__important">
                                 <div class="tasks-pm__icon icon-status green"></div>
                                 <span>2880 мин.</span>
-                                <div class="tasks-pm__icon icon-important"></div>
+                                <a href="#" title="Задача просрочена lorem ipsum" class="tasks-pm__icon icon-important"></a>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">Задача открыта</div>
@@ -240,14 +260,14 @@
                                 <div class="tasks-pm__icon icon-phone"></div>
                                 <div class="tasks-pm__icon icon-whatsapp"></div>
                                 <span>+7 (999) 999-99-99</span>
-                                <div class="tasks-pm__icon icon-copy"></div>
+                                <button class="tasks-pm__icon icon-copy"></button>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__important">
                                 <div class="tasks-pm__icon icon-status danger"></div>
                                 <span>Задача просрочена</span>
-                                <div class="tasks-pm__icon icon-important"></div>
+                                <a href="#" title="Задача просрочена lorem ipsum" class="tasks-pm__icon icon-important"></a>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">Задача открыта</div>
@@ -257,7 +277,9 @@
                                 <span>Доставка</span>
                             </div>
                         </div>
-                        <div class="tasks-pm__cell"></div>
+                        <div class="tasks-pm__cell">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sint odio optio provident numquam tempora saepe, ullam qui, facere consectetur expedita.
+                        </div>
                     </div>
                     <div class="tasks-pm__row">
                         <div class="tasks-pm__cell">10275612</div>
@@ -270,14 +292,14 @@
                                 <div class="tasks-pm__icon icon-phone"></div>
                                 <div class="tasks-pm__icon icon-whatsapp"></div>
                                 <span>+7 (999) 999-99-99</span>
-                                <div class="tasks-pm__icon icon-copy"></div>
+                                <button class="tasks-pm__icon icon-copy"></button>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__important">
                                 <div class="tasks-pm__icon icon-status green"></div>
                                 <span>4320 мин.</span>
-                                <div class="tasks-pm__icon icon-important"></div>
+                                <a href="#" title="Задача просрочена lorem ipsum" class="tasks-pm__icon icon-important"></a>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">Задача открыта</div>
@@ -287,7 +309,9 @@
                                 <span>Отзыв</span>
                             </div>
                         </div>
-                        <div class="tasks-pm__cell"></div>
+                        <div class="tasks-pm__cell">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sint odio optio provident numquam tempora saepe, ullam qui, facere consectetur expedita. Aliquid libero officiis fugit, sit quibusdam dolor nisi harum?
+                        </div>
                     </div>
                     <div class="tasks-pm__row">
                         <div class="tasks-pm__cell">10275612</div>
@@ -300,14 +324,14 @@
                                 <div class="tasks-pm__icon icon-phone"></div>
                                 <div class="tasks-pm__icon icon-whatsapp"></div>
                                 <span>+7 (999) 999-99-99</span>
-                                <div class="tasks-pm__icon icon-copy"></div>
+                                <button class="tasks-pm__icon icon-copy"></button>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__important">
                                 <div class="tasks-pm__icon icon-status gray"></div>
                                 <span>2880 мин.</span>
-                                <div class="tasks-pm__icon icon-important"></div>
+                                <a href="#" title="Задача просрочена lorem ipsum" class="tasks-pm__icon icon-important"></a>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">Задача открыта</div>
@@ -317,7 +341,9 @@
                                 <span>Установка</span>
                             </div>
                         </div>
-                        <div class="tasks-pm__cell"></div>
+                        <div class="tasks-pm__cell">
+                            Lorem ipsum dolor sit
+                        </div>
                     </div>
                     <div class="tasks-pm__row red">
                         <div class="tasks-pm__cell">10275612</div>
@@ -330,14 +356,14 @@
                                 <div class="tasks-pm__icon icon-phone"></div>
                                 <div class="tasks-pm__icon icon-whatsapp"></div>
                                 <span>+7 (999) 999-99-99</span>
-                                <div class="tasks-pm__icon icon-copy"></div>
+                                <button class="tasks-pm__icon icon-copy"></button>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">
                             <div class="tasks-pm__important">
                                 <div class="tasks-pm__icon icon-status danger"></div>
                                 <span>Задача просрочена</span>
-                                <div class="tasks-pm__icon icon-important"></div>
+                                <a href="#" title="Задача просрочена lorem ipsum" class="tasks-pm__icon icon-important"></a>
                             </div>
                         </div>
                         <div class="tasks-pm__cell">Задача открыта</div>
@@ -347,7 +373,9 @@
                                 <span>Доставка</span>
                             </div>
                         </div>
-                        <div class="tasks-pm__cell"></div>
+                        <div class="tasks-pm__cell">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </div>
                     </div>
                 </div>
             </div>
