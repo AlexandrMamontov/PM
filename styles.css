@@ -569,74 +569,104 @@ body {
     outline: none;
 }
 
-#input-number,
+#input-number {
+    min-width: 100px;
+    width: 100%;
+}
+
 .tasks-pm__cell:nth-child(1) {
     min-width: 100px;
     width: 100%;
 }
 
-#input-date,
-.tasks-pm__cell:nth-child(2) {
-    min-width: 100px;
+#input-date {
+    min-width: 140px;
     width: 100%;
 }
 
-#input-city,
+.tasks-pm__cell:nth-child(2) {
+    min-width: 140px;
+    width: 100%;
+}
+
+#input-city {
+    min-width: 155px;
+    width: 100%;
+}
+
 .tasks-pm__cell:nth-child(3) {
     min-width: 155px;
     width: 100%;
 }
 
-#input-manager,
+#input-manager {
+    min-width: 210px;
+    width: 100%;
+}
+
 .tasks-pm__cell:nth-child(4) {
-    min-width: 190px;
+    min-width: 210px;
     width: 100%;
 }
 
-#input-fio,
+#input-fio {
+    min-width: 220px;
+    width: 100%;
+}
+
 .tasks-pm__cell:nth-child(5) {
-    min-width: 190px;
+    min-width: 220px;
     width: 100%;
 }
 
-#input-phone,
+#input-phone {
+    min-width: 260px;
+    width: 100%;
+}
+
 .tasks-pm__cell:nth-child(6) {
-    min-width: 230px;
+    min-width: 260px;
     width: 100%;
 }
 
-#input-important,
+#input-important {
+    min-width: 225px;
+    width: 100%;
+}
+
 .tasks-pm__cell:nth-child(7) {
     min-width: 225px;
     width: 100%;
 }
 
-#input-status-task,
+#input-status-task {
+    min-width: 190px;
+    width: 100%;
+}
+
 .tasks-pm__cell:nth-child(8) {
-    min-width: 160px;
+    min-width: 190px;
     width: 100%;
     text-align: center;
 }
 
-.tasks-pm__cell:nth-child(9),
-#input-order {
+#input-status-order {
     min-width: 200px;
     width: 100%;
-    text-align: center;
 }
 
-#input-status-order,
-.tasks-pm__cell:nth-child(10) {
-    min-width: 160px;
+.tasks-pm__cell:nth-child(9) {
+    min-width: 200px;
     width: 100%;
-}
-
-.tasks-pm__cell:nth-child(10) {
     justify-content: flex-start;
 }
 
-#input-result,
-.tasks-pm__cell:nth-child(11) {
+#input-result {
+    min-width: 200px;
+    width: 100%;
+}
+
+.tasks-pm__cell:nth-child(10) {
     min-width: 200px;
     width: 100%;
 }
