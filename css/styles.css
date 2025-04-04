@@ -557,6 +557,7 @@ body {
     display: flex;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .tasks-pm__input {
@@ -607,7 +608,7 @@ body {
 
 #input-important,
 .tasks-pm__cell:nth-child(7) {
-    min-width: 225px;
+    min-width: 180px;
     width: 100%;
 }
 
@@ -689,6 +690,10 @@ body {
     gap: 5px;
 }
 
+.tasks-pm__important span {
+    text-align: center;
+}
+
 .tasks-pm__status {
     justify-content: flex-start;
 }
@@ -699,6 +704,10 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.tasks-pm__icon.icon-whatsapp:before {
+    display: none;
 }
 
 .icon-phone {
